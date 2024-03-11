@@ -17,7 +17,7 @@ const handleRotation = (progress: SharedValue<number>) => {
   return `${progress.value * 2 * Math.PI}rad`;
 };
 
-export default function App() {
+export default function Introduction() {
   const progress = useSharedValue(1);
   const scale = useSharedValue(2);
 
