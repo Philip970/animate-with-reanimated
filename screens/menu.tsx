@@ -38,7 +38,10 @@ const Menu = () => {
         title="Pan gesture handler basics"
         onPress={() => navigation.navigate("PanGestureHandlerBasics")}
       />
-      <Item title="Introduction to reanimated 2" onPress={() => {}} />
+      <Item
+        title="Interpolate with ScrollView"
+        onPress={() => navigation.navigate("InterpolateWithScrollView")}
+      />
     </ScrollView>
   );
 };
