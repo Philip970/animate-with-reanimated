@@ -42,6 +42,10 @@ const Menu = () => {
         title="Interpolate with ScrollView"
         onPress={() => navigation.navigate("InterpolateWithScrollView")}
       />
+      <Item
+        title="Interpolate Colors"
+        onPress={() => navigation.navigate("InterpolateColors")}
+      />
     </ScrollView>
   );
 };

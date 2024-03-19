@@ -5,10 +5,12 @@ import Menu from "./screens/menu";
 import Introduction from "./screens/00-intoduction-to-reanimated-2";
 import PanGestureHandlerBasics from "./screens/01-pan-gesture-handler-basics";
 import InterpolateWithScrollView from "./screens/02-interpolate-with-scrollview";
+import InterpolateColors from "./screens/03-interpolate-colors";
 
 export type NavigatorParams = {
   Menu: undefined;
   Introduction: undefined;
+  InterpolateColors: undefined;
   PanGestureHandlerBasics: undefined;
   InterpolateWithScrollView: undefined;
 };
@@ -21,6 +23,13 @@ export default function App() {
       <Stack.Navigator initialRouteName="Menu">
         <Stack.Screen name="Menu" component={Menu} />
         <Stack.Screen name="Introduction" component={Introduction} />
+        <Stack.Screen
+          options={{
+            headerShown: false,
+          }}
+          name="InterpolateColors"
+          component={InterpolateColors}
+        />
         <Stack.Screen
           name="PanGestureHandlerBasics"
           component={PanGestureHandlerBasics}
